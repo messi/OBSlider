@@ -30,7 +30,6 @@
 - (void) dealloc 
 {
     [self releaseOutlets];
-    [super dealloc];
 }
 
 
@@ -64,7 +63,7 @@
 
 - (void) updateUI
 {
-    NSNumberFormatter *percentFormatter = [[[NSNumberFormatter alloc] init] autorelease];
+    NSNumberFormatter *percentFormatter = [[NSNumberFormatter alloc] init];
     [percentFormatter setNumberStyle:NSNumberFormatterPercentStyle];
     
     self.sliderValueLabel.text = [NSString stringWithFormat:@"Value: %.0f", self.slider.value];

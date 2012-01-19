@@ -16,8 +16,8 @@
     OBSliderDemoViewController *viewController;
 }
 
-@property (nonatomic, retain) IBOutlet UIWindow *window;
-@property (nonatomic, retain) IBOutlet OBSliderDemoViewController *viewController;
+@property (nonatomic, strong) IBOutlet UIWindow *window;
+@property (nonatomic, strong) IBOutlet OBSliderDemoViewController *viewController;
 
 @end
 
